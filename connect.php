@@ -76,7 +76,6 @@ if($mysqli->connect_errno){
     $res = $mysqli->query($sql);
 
     if($res){
-        // $message_array = $res->fetch_all(MYSQLI_ASSOC);//fetch_all注意
         while ($row = $res->fetch_assoc()) {
             $message_array [] = $row;
             // echo $row["user_id"] . $row["name"] . "<br>";

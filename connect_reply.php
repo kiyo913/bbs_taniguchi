@@ -78,7 +78,6 @@ if($mysqli->connect_errno){
     $sql = "SELECT id,name,post_datetime,post_text FROM post_taniguchi WHERE parent_id = $id ORDER BY post_datetime DESC LIMIT 0,5";
     $res = $mysqli->query($sql);
     if($res){
-        //$message_array = $res->fetch_all(MYSQLI_ASSOC);
         while ($row = $res->fetch_assoc()) {
             $message_array[] = $row;
         }
