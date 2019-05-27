@@ -110,7 +110,6 @@ function disp_log($page,$max){
     </div>
 </article>
 <?php   
-    // print "</p>";
     }
 }
 /**
