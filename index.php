@@ -92,7 +92,6 @@ function disp_log($page,$max){
     $start = ($page == 1)? 0 : ($page-1) * $max;
     $end   = ($page * $max);
     
-    // print "<p>";
     for($i=$start;$i<$end;$i++){
         if($i >= $count){break;}
 ?>  
